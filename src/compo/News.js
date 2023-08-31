@@ -66,7 +66,7 @@ export class News extends Component {
                 <div className='container my-3'>
                     <h1 className='text-center' style={{margin:'35px 0px'}}> News-Hub Top Headlines</h1>
                     <div className='row'>
-                        {this.state.articles.map((Element) => (
+                        {this.state.articles?.map((Element) => (
                             <div className='col-md-4' key={Element.url}>
                                 <Newsitem title={Element.title?.slice(0,45)} description={Element.description?.slice(0,100)} imageurl={Element.urlToImage} newsurl={Element.url} />
                             </div>
